@@ -9,24 +9,58 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 24px;
+      background: #111;
+      color: #fff;
     }
     table {
       border-collapse: collapse;
       margin: 0 auto;
       width: 720px;
       max-width: 100%;
+      background: #222;
+      color: #fff;
     }
     th, td {
-      border: 1px solid #000;
+      border: 1px solid #555;
       padding: 10px 16px;
       text-align: left;
       vertical-align: top;
+      color: #fff;
     }
     th {
       width: 35%;
+      background: #333;
+    }
+    a {
+      color: #fff;
     }
     .tengah {
       text-align: center;
+    }
+    .navbar th {
+      font-size: 1.2em;
+      text-transform: uppercase;
+      padding: 14px;
+      text-align: center;
+      border: 2px solid #fff;
+      background: #333;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .navbar .aktif {
+      background: #fff;
+    }
+    .navbar .aktif a {
+      color: #111;
+    }
+    .navbar .brand {
+      letter-spacing: 3px;
+    }
+    iframe {
+      width: 100%;
+      border: 0;
     }
   </style>
 </head>
@@ -34,9 +68,13 @@
   <table>
     <tr>
       <td>
-        <strong>DONGKER</strong> &nbsp;|&nbsp;
-        <a href="index.html">Beranda</a>
-        <a href="album.html"><strong>[Album]</strong></a>
+        <table class="navbar" width="100%">
+          <tr>
+            <th class="brand">Dongker</th>
+            <th><a href="index.html">Beranda</a></th>
+            <th class="aktif"><a href="album.html">Album</a></th>
+          </tr>
+        </table>
       </td>
     </tr>
     <tr>
@@ -52,7 +90,6 @@
         <iframe
           src="https://open.spotify.com/embed/album/7dlxVHTaBEFpG8FVikgRfx"
           height="352"
-          width="100%"
           allow="encrypted-media"
           loading="lazy"
           title="Pemutar Spotify album Melankolia Radikal">
@@ -166,7 +203,7 @@
     </tr>
     <tr>
       <td class="tengah">
-        <p>Dibuat oleh: Athar Hafidz Athaillah | Kelas 11</p>
+        <p>Dibuat oleh: Nama Kamu | Kelas 11</p>
       </td>
     </tr>
   </table>
